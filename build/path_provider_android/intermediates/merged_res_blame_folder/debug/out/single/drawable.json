@@ -1,0 +1,18 @@
+[
+    {
+        "merged": "C:\\Users\\david\\OneDrive\\Desktop\\STAY-FIT\\build\\path_provider_android\\intermediates\\res\\merged\\debug\\drawable\\notification_bg_low.xml",
+        "source": "C:\\Users\\david\\.gradle\\caches\\transforms-2\\files-2.1\\217c4f82bcd3006ae2c69bfed358a4b5\\core-1.6.0\\res\\drawable\\notification_bg_low.xml"
+    },
+    {
+        "merged": "C:\\Users\\david\\OneDrive\\Desktop\\STAY-FIT\\build\\path_provider_android\\intermediates\\res\\merged\\debug\\drawable\\notification_icon_background.xml",
+        "source": "C:\\Users\\david\\.gradle\\caches\\transforms-2\\files-2.1\\217c4f82bcd3006ae2c69bfed358a4b5\\core-1.6.0\\res\\drawable\\notification_icon_background.xml"
+    },
+    {
+        "merged": "C:\\Users\\david\\OneDrive\\Desktop\\STAY-FIT\\build\\path_provider_android\\intermediates\\res\\merged\\debug\\drawable\\notification_tile_bg.xml",
+        "source": "C:\\Users\\david\\.gradle\\caches\\transforms-2\\files-2.1\\217c4f82bcd3006ae2c69bfed358a4b5\\core-1.6.0\\res\\drawable\\notification_tile_bg.xml"
+    },
+    {
+        "merged": "C:\\Users\\david\\OneDrive\\Desktop\\STAY-FIT\\build\\path_provider_android\\intermediates\\res\\merged\\debug\\drawable\\notification_bg.xml",
+        "source": "C:\\Users\\david\\.gradle\\caches\\transforms-2\\files-2.1\\217c4f82bcd3006ae2c69bfed358a4b5\\core-1.6.0\\res\\drawable\\notification_bg.xml"
+    }
+]

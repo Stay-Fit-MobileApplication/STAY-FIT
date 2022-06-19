@@ -3,12 +3,10 @@ import 'package:firebase_messaging/firebase_messaging.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_local_notifications/flutter_local_notifications.dart';
 import 'package:get/get.dart';
-import 'package:stayfit/views/screens/find_near_friends.dart/find_friends.dart';
-import 'package:stayfit/views/screens/home/home.dart';
+
 import 'package:stayfit/views/screens/registration/mobile/mobile_page.dart';
 
 import 'views/constants/constants.dart';
-import 'views/screens/list_friends/list_friends.dart';
 
 Future<void> _firebaseMessagingBackgroundHandler(RemoteMessage message) async {
   // If you're going to use other Firebase services in the background, such as Firestore,

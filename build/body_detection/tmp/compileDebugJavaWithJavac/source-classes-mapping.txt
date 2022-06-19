@@ -1,0 +1,8 @@
+com/u0x48lab/body_detection/BitmapUtils.java
+ com.u0x48lab.body_detection.BitmapUtils
+com/u0x48lab/body_detection/FrameMetadata.java
+ com.u0x48lab.body_detection.FrameMetadata
+ com.u0x48lab.body_detection.FrameMetadata$1
+ com.u0x48lab.body_detection.FrameMetadata$Builder
+com/u0x48lab/body_detection/BuildConfig.java
+ com.u0x48lab.body_detection.BuildConfig

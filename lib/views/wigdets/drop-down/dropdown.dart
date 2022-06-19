@@ -34,7 +34,7 @@ class DropDownCustomState extends State<DropDownCustom> {
 
   @override
   Widget build(BuildContext context) {
-    WidgetsBinding.instance!.addPostFrameCallback((timeStamp) {
+    WidgetsBinding.instance.addPostFrameCallback((timeStamp) {
       RenderBox box = context.findRenderObject() as RenderBox;
       setState(() {
         width = box.size.width;

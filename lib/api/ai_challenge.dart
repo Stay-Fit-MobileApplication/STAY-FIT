@@ -8,9 +8,11 @@ import 'package:shared_preferences/shared_preferences.dart';
 import '../views/constants/constants.dart';
 import '../views/wigdets/toast/toast.dart';
 
+const String baseUrl = "http://159.89.161.168:5003/v1/challenge";
+
 class AiChallengeApi {
   static Future<Map<String, dynamic>> sendData(String id, int count) async {
-    String url = "http://app.geekstudios.tech/user/v1/challenge/update";
+    String url = "$baseUrl/update";
     Uri uri = Uri.parse(url);
     SharedPreferences pref = await SharedPreferences.getInstance();
     String? accessToken = pref.getString("token");
@@ -38,7 +40,7 @@ class AiChallengeApi {
   }
 
   static Future<String?> sendChallengeequest(String userid) async {
-    String url = "http://app.geekstudios.tech/user/v1/challenge/sent";
+    String url = "$baseUrl/sent";
     Uri uri = Uri.parse(url);
     SharedPreferences pref = await SharedPreferences.getInstance();
     String? accessToken = pref.getString("token");
@@ -82,7 +84,7 @@ class AiChallengeApi {
   }
 
   static Future<String?> acceptChallengeequest(String chalengeId) async {
-    String url = "http://app.geekstudios.tech/user/v1/challenge/accept";
+    String url = "$baseUrl/accept";
     Uri uri = Uri.parse(url);
     SharedPreferences pref = await SharedPreferences.getInstance();
     String? accessToken = pref.getString("token");

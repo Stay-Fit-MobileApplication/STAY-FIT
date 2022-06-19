@@ -10,9 +10,11 @@ import 'package:stayfit/models/user_model.dart';
 import 'package:stayfit/views/constants/constants.dart';
 import 'package:stayfit/views/wigdets/toast/toast.dart';
 
+const String baseUrl = "http://159.89.161.168:5001/v1";
+
 class NotificationApi {
   static Future<List<NotificationModel>> getNotifications() async {
-    String url = "http://app.geekstudios.tech/contact/v1/get";
+    String url = "$baseUrl/get";
     final uri = Uri.parse(url);
     SharedPreferences pref = await SharedPreferences.getInstance();
     String? accessToken = pref.getString("token");

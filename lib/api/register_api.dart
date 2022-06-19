@@ -1,4 +1,5 @@
 import 'dart:convert';
+import 'dart:developer';
 
 import 'package:firebase_messaging/firebase_messaging.dart';
 import 'package:flutter/material.dart';
@@ -12,16 +13,15 @@ import 'package:stayfit/views/screens/registration/extra-details/extra_details.d
 import 'package:stayfit/views/screens/registration/otp/otp_verification.dart';
 import 'package:stayfit/views/wigdets/toast/toast.dart';
 
-const String baseUrl = "http://app.geekstudios.tech";
+const String baseUrl = "http://159.89.161.168:5000/v1";
 
 class RegisterApi {
   static Future<int> emailCheck(
       {required String mobile, required String countryCode}) async {
-    String url = "$baseUrl/auth/v1/login";
-    print("url $url");
+    String url = "$baseUrl/login";
+
     final uri = Uri.parse(url);
-    print("phone $mobile");
-    print("country $countryCode");
+
     Map<String, dynamic> body = {"phone": mobile, "country_code": countryCode};
     try {
       http.Response response = await http
@@ -71,7 +71,7 @@ class RegisterApi {
       {required String mobile,
       required String countryCode,
       required String otp}) async {
-    String url = "$baseUrl/auth/v1/validate/otp/";
+    String url = "$baseUrl/validate/otp/";
     print("url $url");
     final uri = Uri.parse(url);
     print("phone $mobile");
@@ -169,8 +169,8 @@ class RegisterApi {
     required DateTime birthday,
     required int activeness,
   }) async {
-    String url = "http://app.geekstudios.tech/user/v1/profile/update";
-    print("url $url");
+    String url = "http://159.89.161.168:5003/v1/profile/update";
+
     final uri = Uri.parse(url);
 
     SharedPreferences pref = await SharedPreferences.getInstance();
@@ -190,13 +190,13 @@ class RegisterApi {
       "hip": hip,
       "neck": neck,
       "waist": waist,
-      "lat": lat,
-      "lon": lon,
+      "lat": 23.1645,
+      "lon": 92.9376,
       "bio": bio,
       "gender": gender,
       "activeness": activeness
     };
-    print(body);
+
     try {
       http.Response response = await http
           .post(
@@ -204,7 +204,7 @@ class RegisterApi {
             headers: headers,
             body: json.encode(body),
           )
-          .timeout(const Duration(seconds: 3));
+          .timeout(const Duration(seconds: 5));
 
       debugPrint("------------status code------------");
       debugPrint("${response.statusCode}");
@@ -232,7 +232,7 @@ class RegisterApi {
         return 400;
       }
     } catch (e) {
-      debugPrint("Error occured while registering $e");
+      log("Error occured while registering $e");
       return 501;
     }
   }

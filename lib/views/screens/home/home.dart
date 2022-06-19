@@ -178,7 +178,15 @@ class _HomePageState extends State<HomePage> {
                           title: "AI Workout\nChallenge",
                           image: "assets/png/ai-png.png",
                           buttonText: "participate",
-                          ontap: () {}),
+                          ontap: () {
+                            Navigator.push(
+                                context,
+                                MaterialPageRoute(
+                                    builder: (context) =>
+                                        const FriendlyChallenge(
+                                          opponent: "Pranav",
+                                        )));
+                          }),
                     ),
                     GestureDetector(
                       onTap: () {
@@ -189,7 +197,9 @@ class _HomePageState extends State<HomePage> {
                           title: "Workout!\nstay fit",
                           image: "assets/png/dumbell-png.png",
                           buttonText: "participate",
-                          ontap: () {}),
+                          ontap: () {
+                            Get.to(WorkoutSelect());
+                          }),
                     ),
                   ],
                 ),

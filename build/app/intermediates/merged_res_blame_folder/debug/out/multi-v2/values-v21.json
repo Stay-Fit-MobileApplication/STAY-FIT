@@ -1,0 +1,66 @@
+{
+    "logs": [
+        {
+            "outputFile": "C:\\Users\\david\\OneDrive\\Desktop\\STAY-FIT\\build\\app\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values-v21\\values-v21.xml",
+            "map": [
+                {
+                    "source": "C:\\Users\\david\\.gradle\\caches\\transforms-2\\files-2.1\\7d8214734bb7ff292a2eaa93920d2157\\jetified-camera-camera2-1.0.1\\res\\values-v21\\values-v21.xml",
+                    "from": {
+                        "startLines": "2",
+                        "startColumns": "4",
+                        "startOffsets": "55",
+                        "endLines": "4",
+                        "endColumns": "13",
+                        "endOffsets": "207"
+                    },
+                    "to": {
+                        "startLines": "6",
+                        "startColumns": "4",
+                        "startOffsets": "368",
+                        "endLines": "8",
+                        "endColumns": "13",
+                        "endOffsets": "520"
+                    }
+                },
+                {
+                    "source": "C:\\Users\\david\\.gradle\\caches\\transforms-2\\files-2.1\\217c4f82bcd3006ae2c69bfed358a4b5\\core-1.6.0\\res\\values-v21\\values-v21.xml",
+                    "from": {
+                        "startLines": "2,3,4,5,6,7,8,9,10,13",
+                        "startColumns": "4,4,4,4,4,4,4,4,4,4",
+                        "startOffsets": "55,173,237,304,368,484,610,736,864,1036",
+                        "endLines": "2,3,4,5,6,7,8,9,12,17",
+                        "endColumns": "117,63,66,63,115,125,125,127,12,12",
+                        "endOffsets": "168,232,299,363,479,605,731,859,1031,1383"
+                    },
+                    "to": {
+                        "startLines": "2,3,4,5,9,10,17,21,25,28",
+                        "startColumns": "4,4,4,4,4,4,4,4,4,4",
+                        "startOffsets": "55,173,237,304,525,641,1098,1392,1687,1859",
+                        "endLines": "2,3,4,5,9,10,17,21,27,32",
+                        "endColumns": "117,63,66,63,115,125,125,127,12,12",
+                        "endOffsets": "168,232,299,363,636,762,1219,1515,1854,2206"
+                    }
+                },
+                {
+                    "source": "C:\\Users\\david\\.gradle\\caches\\transforms-2\\files-2.1\\663ba48ae24bccad6f57f169f5ce53f9\\media-1.1.0\\res\\values-v21\\values-v21.xml",
+                    "from": {
+                        "startLines": "2,5,8,11",
+                        "startColumns": "4,4,4,4",
+                        "startOffsets": "55,223,386,554",
+                        "endLines": "4,7,10,13",
+                        "endColumns": "12,12,12,12",
+                        "endOffsets": "218,381,549,716"
+                    },
+                    "to": {
+                        "startLines": "11,14,18,22",
+                        "startColumns": "4,4,4,4",
+                        "startOffsets": "767,935,1224,1520",
+                        "endLines": "13,16,20,24",
+                        "endColumns": "12,12,12,12",
+                        "endOffsets": "930,1093,1387,1682"
+                    }
+                }
+            ]
+        }
+    ]
+}

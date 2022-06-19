@@ -31,11 +31,11 @@ class UserSimplify {
       username: json["username"]);
 }
 
+const String baseUrl = "http://159.89.161.168:5003/v1";
+
 class UserApi {
   static Future<UserModel?> getDetailsUser(String id) async {
-    print("Caing");
-
-    String url = "http://app.geekstudios.tech/user/v1/profile/view/user";
+    String url = "$baseUrl/profile/view/user";
     final uri = Uri.parse(url);
     SharedPreferences pref = await SharedPreferences.getInstance();
     String? accessToken = pref.getString("token");
@@ -76,7 +76,7 @@ class UserApi {
   static Future<List<UserSimplify>> getFriends(String id) async {
     List<UserSimplify> friends = [];
 
-    String url = "http://app.geekstudios.tech/user/v1/request/get";
+    String url = "$baseUrl/request/get";
     final uri = Uri.parse(url);
     SharedPreferences pref = await SharedPreferences.getInstance();
     String? accessToken = pref.getString("token");
@@ -118,7 +118,7 @@ class UserApi {
   }
 
   static Future<void> sendFriendRequest(String id) async {
-    String url = "http://app.geekstudios.tech/user/v1/request/sent";
+    String url = "$baseUrl/request/sent";
 
     final uri = Uri.parse(url);
 
@@ -159,7 +159,7 @@ class UserApi {
 
   static Future<void> getUser(
       {required ProfileController profileController}) async {
-    String url = "http://app.geekstudios.tech/user/v1/profile/get";
+    String url = "$baseUrl/profile/get";
     print("url $url");
     final uri = Uri.parse(url);
 
@@ -200,8 +200,7 @@ class UserApi {
   }
 
   static Future<List<UserSimplify>> getNearbyUsers(String km) async {
-    String url =
-        "http://app.geekstudios.tech/user/v1/profile/get/nearby-users/$km";
+    String url = "$baseUrl/profile/get/nearby-users/$km";
     final uri = Uri.parse(url);
 
     SharedPreferences pref = await SharedPreferences.getInstance();
